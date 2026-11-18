@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'AppointmentApp',
+    
 
     # My applications
-    'catalog',
+    'AccountApp',
 ]
 
 
@@ -132,3 +134,5 @@ STATIC_URL = 'static/'
 # DEFAULT PRIMARY KEY FIELD TYPE
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
